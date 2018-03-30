@@ -1,0 +1,20 @@
+{
+  "name": "ai1to1_client",
+  "version": "1.0.0",
+  "description": "ai1to1 nodejs client.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai1to1",
+    "client",
+    "nodejs"
+  ],
+  "author": "Yuanzhang Hu",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0"
+  }
+}
