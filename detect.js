@@ -5,11 +5,11 @@ const https = require('https');
 const fs = require('fs');
 
 class Detect {
-  constructor(serverIP, port, serviceKey, projectId) {
+  constructor(serverIP, port, servicekey, projectid) {
     this.serverIP = serverIP;
     this.port = port;
-    this.serviceKey = serviceKey;
-    this.projectId = projectId;
+    this.servicekey = servicekey;
+    this.projectid = projectid;
   }
 
   detect(buf) {
@@ -23,7 +23,7 @@ class Detect {
       var options = {
         host: self.serverIP,
         port: self.port,
-        path: '/customize/detect?projectId=' + self.projectId + '&serviceKey=' + self.serviceKey,
+        path: '/customize/detect?projectid=' + self.projectid + '&servicekey=' + self.servicekey,
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',

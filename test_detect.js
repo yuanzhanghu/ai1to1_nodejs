@@ -3,8 +3,8 @@
 const fs = require('fs');
 const Detect = require('./detect');
 
-var detect = async function(picPath, serverIP, port, serviceKey, projectId) {
-  let detect = new Detect(serverIP, port, serviceKey, projectId);
+var detect = async function(picPath, serverIP, port, servicekey, projectid) {
+  let detect = new Detect(serverIP, port, servicekey, projectid);
   let buf = fs.readFileSync(picPath);
   let t1 = Date.now();
   let retStr = await detect.detect(buf);
