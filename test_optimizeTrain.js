@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const httpGet = require('./httpsGet');
+const httpsGet = require('./httpsGet');
 
 (async () => {
   const cmdSeq = [
@@ -15,7 +15,7 @@ const httpGet = require('./httpsGet');
   const serverIP = 'api.ai1to1.com';
   for (let i = 0; i < cmdSeq.length; i++) {
     console.log("httpsGet", serverIP, cmdSeq[i]);
-    let retStr = await httpGet(serverIP, 443, cmdSeq[i], 'test1', 'test1');
+    let retStr = await httpsGet(serverIP, 443, cmdSeq[i], 'test1', 'test1');
     console.log('retStr', retStr);
     let retObj = JSON.parse(retStr);
     if (retObj.error && retObj.error != "") {
