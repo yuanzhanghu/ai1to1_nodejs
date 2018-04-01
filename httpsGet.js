@@ -2,12 +2,12 @@
 
 const https = require('https');
 
-module.exports = function(serverIP, port, urlPath, projectId, serviceKey) {
+module.exports = function(serverIP, port, urlPath, projectid, servicekey) {
   return new Promise((resolve, reject) => {
     var options = {
       host: serverIP,
       port: port,
-      path: urlPath + '?projectId=' + projectId + '&serviceKey=' + serviceKey,
+      path: urlPath + '?projectid=' + projectid + '&servicekey=' + servicekey,
       method: 'GET',
     };
 
