@@ -1,7 +1,7 @@
 # ai1to1的nodejs SDK
 
-https://www.ai1to1.com
-是一个定制图像识别开放平台，可以定制训练图像识别的深度学习模型, 并自动生成识别API。
+
+定制图像识别开放平台https://www.ai1to1.com，或者http://www.ai1to1.com:7001/public/home/index.html， 可以定制训练图像识别的深度学习模型, 并自动生成识别API。
 
 本代码是nodejs版本的SDK, 纯javascript的实现请参考https://api.ai1to1.com/public/test.html
 
