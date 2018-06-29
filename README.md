@@ -3,7 +3,7 @@
 https://www.ai1to1.com
 是一个定制图像识别开放平台，可以定制训练图像识别的深度学习模型, 并自动生成识别API。
 
-本代码是nodejs版本的SDK, 纯javascript的实现请参考https://api.ai1to1.com/public/test.html
+本代码是nodejs版本的SDK, 纯javascript的实现请参考http://api.ai1to1.com:7001/public/test.html
 
 # 使用方法
 ### 1. 将detect.js和httpsGet.js import到你的nodejs工程里面
